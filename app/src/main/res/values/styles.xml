@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.QuickStore.TextInputLogIn" parent="Theme.QuickStore">
+        <item name="android:background">?attr/colorOnBackground</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+</resources>

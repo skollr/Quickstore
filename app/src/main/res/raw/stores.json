@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Cafeteria CoffeGuet",
+    "direccion": "Cr: 56 # 71—25",
+    "telefonoFijo": "Tel: 685 89 58",
+    "paginaWeb": "www.coffeguet.com"
+  },
+  {
+    "nombre": "Lavanderia LavoSeco",
+    "direccion": "Cr: 106 # 9—25",
+    "telefonoFijo": "Tel: 365 89 41",
+    "paginaWeb": "www.LavoSeco.com"
+  },
+  {
+    "nombre": "Fruteria CampoFresco",
+    "direccion": "Cr: 152# 85—25",
+    "telefonoFijo": "Tel: 300 01 46",
+    "paginaWeb": "Www.CampoFresco.com"
+  },
+  {
+    "nombre": "Papeleria DisPapeles",
+    "direccion": "Cr: 140# 85—25",
+    "telefonoFijo": "Tel: 300 22 45",
+    "paginaWeb": "Www.dispapeles.com"
+  }
+]
