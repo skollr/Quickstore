@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">QuickStore</string>
+    <string name="qstr_default_text_on_search">Busca por algun criterio</string>
+    <string name="app_label">QuickStore</string>
+    <string name="search_hint">Buscar productos o nombres</string>
+    <string name="menuSearch">Buscar</string>
+    <string name="menuSettings">Settings</string>
+    <string name="qstr_option_search1">search1</string>
+    <string name="qstr_option_search2">Search results</string>
+    <string name="my_app_title">QuickStore</string>
+    <string name="navegation_drawerOpen">QuickStoreOpen</string>
+    <string name="navegation_drawerClose">QuickStoreClose</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_instruction_to_user">Busca por tienda o producto</string>
+    <string name="menu_search">Buscar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_account">Cuenta</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hint_user_name">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_logIn">Log In</string>
+    <string name="link_register"><u>Registrarse</u></string>
+    <string name="title_activity_register_form">Registro Clientes</string>
+    <string name="hint_client_form_name">Nombre</string>
+    <string name="hint_client_form_surname">Apellido</string>
+    <string name="hint_client_form_address">Direccion</string>
+    <string name="hint_client_form_phone">Telefono(opcional)</string>
+    <string name="hint_client_form_mobile_phone">Celular</string>
+    <string name="btn_register">Registrarse</string>
+    <string name="hint_client_form_user">Usuario</string>
+    <string name="hint_client_form_password">Contraseña</string>
+    <string name="string_store_name">Productos</string>
+    <string name="string_store_address">Dirección</string>
+    <string name="string_store_viewOnMap">Ver en maps</string>
+    <string name="string_store_phone">Telefono</string>
+    <string name="search_detail_description">Detalles</string>
+    <string name="string_store_mobilePhone">Celular</string>
+    <string name="string_store_webPage">Pagina web</string>
+</resources>

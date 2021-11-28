@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:minHeight="88dp" >
+
+    <ImageView
+        android:id="@+id/mtrl_list_item_icon"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:padding="16dp"
+        app:srcCompat="@drawable/qrstr_ic_application" />
+
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/mtrl_list_item_icon"
+        android:maxLines="1"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:text="Nombre de tienda"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_name"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/mtrl_list_item_icon"
+        android:maxLines="1"
+        android:paddingEnd="16dp"
+        android:text="Dir: Kr 98 # 47 - 89"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_address"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/mtrl_list_item_icon"
+        android:maxLines="1"
+        android:paddingEnd="16dp"
+        android:text="Tel: 135 55 55"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_webSite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/store_phoneNumber"
+        android:layout_gravity="center_vertical"
+        android:layout_toEndOf="@id/mtrl_list_item_icon"
+        android:maxLines="1"
+        android:paddingEnd="16dp"
+        android:text="www.tienda.com"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerInsetStart="16dp"
+        app:dividerInsetEnd="16dp"
+        app:dividerThickness="3dp"/>
+</RelativeLayout>
