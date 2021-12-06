@@ -1,21 +1,31 @@
 package com.firstapplications.quickstore;
 
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 
+import android.widget.Toast;
+
+
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -48,6 +58,36 @@ public class HomeActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu)
     {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView =
+                (SearchView) menu.findItem(R.id.option_search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
+        searchView.setQueryHint("Busca productos");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener()
+                                            {
+                                                @Override
+                                                public boolean onQueryTextSubmit(String query)
+                                                {
+                                                    Bundle bundle = new Bundle();
+                                                    bundle.putString("query", query);
+                                                    Navigation.findNavController(HomeActivity.this, R.id.recycler_view).
+                                                            navigate(R.id.searchFragment, bundle);
+                                                    //se oculta el EditText
+                                                    searchView.setQuery("", false);
+                                                    searchView.setIconified(true);
+                                                    return true;
+                                                }
+
+                                                @Override
+                                                public boolean onQueryTextChange(String newText)
+                                                {
+                                                    return false;
+                                                }
+                                            });
         return true;
     }
 

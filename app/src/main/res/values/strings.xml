@@ -44,4 +44,8 @@
     <string name="search_detail_description">Detalles</string>
     <string name="string_store_mobilePhone">Celular</string>
     <string name="string_store_webPage">Pagina web</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="btn_go_to_web_page">Ir a sitio web</string>
+    <string name="btn_order_products">Ordenar \n productos</string>
+    <string name="btn_aggregate">Agregar</string>
 </resources>

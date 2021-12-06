@@ -15,7 +15,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginEnd="7dp"
         android:padding="16dp"
-        app:srcCompat="@drawable/qrstr_ic_application" />
+        app:srcCompat="@drawable/ic_baseline_shopping_bag_24" />
 
     <TextView
         android:id="@+id/store_name"
@@ -26,7 +26,7 @@
         android:maxLines="1"
         android:paddingTop="16dp"
         android:paddingEnd="16dp"
-        android:text="Nombre de tienda"
+        android:text="Producto"
         android:textAppearance="?attr/textAppearanceSubtitle1"
         android:textColor="@color/black" />
 
@@ -39,7 +39,7 @@
         android:layout_toEndOf="@id/mtrl_list_item_icon"
         android:maxLines="1"
         android:paddingEnd="16dp"
-        android:text="Dir: Kr 98 # 47 - 89"
+        android:text="Panela"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="@color/black" />
 
@@ -52,20 +52,7 @@
         android:layout_toEndOf="@id/mtrl_list_item_icon"
         android:maxLines="1"
         android:paddingEnd="16dp"
-        android:text="Tel: 135 55 55"
-        android:textAppearance="?attr/textAppearanceBody2"
-        android:textColor="@color/black" />
-
-    <TextView
-        android:id="@+id/store_webSite"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/store_phoneNumber"
-        android:layout_gravity="center_vertical"
-        android:layout_toEndOf="@id/mtrl_list_item_icon"
-        android:maxLines="1"
-        android:paddingEnd="16dp"
-        android:text="www.tienda.com"
+        android:text="$ 5.000"
         android:textAppearance="?attr/textAppearanceBody2"
         android:textColor="@color/black" />
 

@@ -10,11 +10,8 @@
         android:label="@string/menu_search"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_nav_fragment_home_to_nav_fragment_client_acount"
-            app:destination="@id/nav_fragment_client_acount" />
-        <action
-            android:id="@+id/action_nav_fragment_home_to_detailsOfStoreItem"
-            app:destination="@id/detailsOfStoreItem" />
+            android:id="@+id/action_nav_fragment_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
     <fragment
         android:id="@+id/nav_fragment_client_acount"
@@ -25,7 +22,24 @@
         android:id="@+id/detailsOfStoreItem"
         android:name="com.firstapplications.quickstore.DetailsOfStoreItem"
         android:label="@string/search_detail_description"
-        tools:layout="@layout/fragment_details_of_store_item"/>
+        tools:layout="@layout/fragment_details_of_store_item">
+        <action
+            android:id="@+id/action_detailsOfStoreItem_to_ordersFragment"
+            app:destination="@id/ordersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.firstapplications.quickstore.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailsOfStoreItem"
+            app:destination="@id/detailsOfStoreItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.firstapplications.quickstore.OrdersFragment"
+        android:label="Pedidos"
+        tools:layout="@layout/fragment_orders"/>
 
 
 </navigation>
