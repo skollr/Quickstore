@@ -23,8 +23,8 @@ import java.util.List;
 
 public class HomeFragment extends Fragment
 {
-    List<Store> storeList;
-    private Button button;
+    private RecyclerView recyclerView;
+    private List<Store> storeList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,17 +43,13 @@ public class HomeFragment extends Fragment
             storeList = objectMapper.readValue(getResources().openRawResource(R.raw.stores),
                     objectMapper.getTypeFactory().
                             constructCollectionType(ArrayList.class, Store.class));
-            for(Store store : storeList)
-            {
-                System.out.println(store);
-            }
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(new StoreListRecyclerViewAdapter(storeList));
     }

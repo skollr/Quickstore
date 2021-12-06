@@ -1,26 +1,38 @@
 [
   {
+    "id_store": 1,
     "nombre": "Cafeteria CoffeGuet",
     "direccion": "Cr: 56 # 71—25",
-    "telefonoFijo": "Tel: 685 89 58",
-    "paginaWeb": "www.coffeguet.com"
+    "telefonoFijo": "685 89 58",
+    "paginaWeb": "www.coffeguet.com",
+    "categorias":"pan, cafe",
+    "geoLocalizacion": "geo:4.6619204,-74.0648811"
   },
   {
+    "id_store": 2,
     "nombre": "Lavanderia LavoSeco",
     "direccion": "Cr: 106 # 9—25",
-    "telefonoFijo": "Tel: 365 89 41",
-    "paginaWeb": "www.LavoSeco.com"
+    "telefonoFijo": "365 89 41",
+    "paginaWeb": "www.LavoSeco.com",
+    "categorias":"lavanderia",
+    "geoLocalizacion": "geo:4.6619204,-74.0648811"
   },
   {
+    "id_store": 3,
     "nombre": "Fruteria CampoFresco",
     "direccion": "Cr: 152# 85—25",
-    "telefonoFijo": "Tel: 300 01 46",
-    "paginaWeb": "Www.CampoFresco.com"
+    "telefonoFijo": "300 01 46",
+    "paginaWeb": "Www.CampoFresco.com",
+    "categorias":"frutas, verduras",
+    "geoLocalizacion": "geo:4.6619204,-74.0648811"
   },
   {
+    "id_store": 4,
     "nombre": "Papeleria DisPapeles",
     "direccion": "Cr: 140# 85—25",
-    "telefonoFijo": "Tel: 300 22 45",
-    "paginaWeb": "Www.dispapeles.com"
+    "telefonoFijo": "300 22 45",
+    "paginaWeb": "Www.dispapeles.com",
+    "categorias":"papel, articulos de oficina, copias",
+    "geoLocalizacion": "geo:4.6619204,-74.0648811"
   }
 ]

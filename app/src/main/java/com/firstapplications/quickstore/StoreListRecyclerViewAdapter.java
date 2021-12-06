@@ -30,10 +30,11 @@ public class StoreListRecyclerViewAdapter extends RecyclerView.Adapter<StoreList
     @Override
     public void onBindViewHolder(@NonNull StoreListViewHolder holder, int position)
     {
-        holder.storeNameTxtView.setText(storeList.get(position).getNombre());
-        holder.storeAddressTxtView.setText(storeList.get(position).getDireccion());
-        holder.storePhoneNumberTxtView.setText(storeList.get(position).getTelefonoFijo());
-        holder.storeWebSiteTxtView.setText(storeList.get(position).getPaginaWeb());
+        holder.setStoreNameTxtView(storeList.get(position).getNombre());
+        holder.setStoreAddressTxtView(storeList.get(position).getDireccion());
+        holder.setStorePhoneNumberTxtView(storeList.get(position).getTelefonoFijo());
+        holder.setStoreWebSiteTxtView(storeList.get(position).getPaginaWeb());
+        holder.setId_store(storeList.get(position).getId_store());
     }
 
     @Override

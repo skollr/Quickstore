@@ -4,12 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 public class Store
 {
-    @JsonIgnore
     private int id_store;
     private String nombre;
     private String direccion;
     private String telefonoFijo;
     private String paginaWeb;
+    private String categorias;
+    private String geoLocalizacion;
     @JsonIgnore
     private int id_resorceImage;
 
@@ -88,15 +89,37 @@ public class Store
         return id_store;
     }
 
-    @Override
-    public String toString()
+    public String getCategorias()
     {
+        return categorias;
+    }
+
+    public void setCategorias(String categorias)
+    {
+        this.categorias = categorias;
+    }
+
+    public String getGeoLocalizacion()
+    {
+        return geoLocalizacion;
+    }
+
+    public void setGeoLocalizacion(String geoLocalizacion)
+    {
+        this.geoLocalizacion = geoLocalizacion;
+    }
+
+    @Override
+    public String toString() {
         return "Store{" +
-                "nombre='" + nombre + '\'' +
+                "id_store=" + id_store +
+                ", nombre='" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", telefonoFijo='" + telefonoFijo + '\'' +
-                ", telefonoCelular='" + paginaWeb + '\'' +
-                ", image=" + id_resorceImage +
+                ", paginaWeb='" + paginaWeb + '\'' +
+                ", categorias='" + categorias + '\'' +
+                ", geoLocalizcion='" + geoLocalizacion + '\'' +
+                ", id_resorceImage=" + id_resorceImage +
                 '}';
     }
 }
